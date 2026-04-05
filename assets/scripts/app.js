@@ -88,3 +88,38 @@ console.log(creatGreetUser("Manuel", "Hello, what's up?"));
 
 */
 
+/* 객체와 클래스 
+
+let age = 57;
+
+const user = {
+    name : 'Max', 
+    age : 34,
+    greet() { // 함수도 저장 가능하다.
+        console.log('hello!');
+        console.log(this.age); // this로 인해 user 안에 있는 age(34) 출력
+        console.log(age);      // 밖에 정의되어 있는 age(57) 출력
+    }
+};
+
+console.log(user); // {name: 'Max', age: 34} 출력 
+console.log(user.name); // name에 주어진 값만 출력
+user.greet(); // user에 있는 greet 함수 실행
+
+class User {    // 클래스는 처음 시작할 때 대문자로 시작
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log("Hi");
+    }
+}
+
+const user1 = new User("Manuel", 35);
+console.log(user1); // User {name: 'Manuel', age: 35} 출력
+console.log(user1.age); // 35 age만 출력
+user1.greet();
+
+*/
