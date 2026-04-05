@@ -123,3 +123,34 @@ console.log(user1.age); // 35 age만 출력
 user1.greet();
 
 */
+
+/* 배열 및 배열 메소드 (map()과 같은) 
+
+let hobbies = ["Sports", "Cooking", "Reading"];
+// 전체를 출력하려면 그냥 배열의 이름만 넣으면 전체 배열 출력. 
+console.log(hobbies);    // 그냥 빈 "[]" 넣으면 Uncaught SyntaxError 발생
+console.log(hobbies[1]); // 배열 안에 하나의 값만 출력할 때 "[0]" 이런 식으로 넣으며, 0부터 시작한다.
+
+// 배열에 새 원소 추가. 맨 뒤에 추가된다.
+hobbies.push("working"); 
+console.log(hobbies); 
+
+// 특정 값의 인덱스를 찾을 수 있는 메소드. 함수를 입력받는다.
+// let index = hobbies.findIndex((item) => item === 'Sports'); // 이런식으로 작성 가능
+let index = hobbies.findIndex((item) => {
+    // 배열에 있는 값과 주어진 값과 비교하면서 true인 값의 인덱스를 찾는다.
+    return item === 'Sports'; // 모두 fales일 경우 -1 출력
+});
+console.log(index);
+
+// 어떠한 원소에서 다른 원소로 변환 가능한 점. 스트링에서 자바스크립트 객체로도 변환 가능
+// 목록의 내용물을 추가하거나 데이터를 JSX 요소로 매핑하는 등 자주 사용
+// 값을 저장하려면 어딘가에 넣어야 한다.
+let editedHobbies = hobbies.map((item) => item + "!");
+console.log(editedHobbies);
+console.log(hobbies);
+
+editedHobbies = hobbies.map((item) => ({text: item}));
+console.log(editedHobbies);
+
+*/
