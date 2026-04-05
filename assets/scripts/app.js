@@ -56,3 +56,35 @@ if(10 === 10) {
 }
 
 */
+
+/* 함수와 매개변수
+
+// 함수는 function이나 "() =>" 문법으로 생성 가능
+function greet() {
+    console.log("hello");
+}
+
+greet();
+    
+function greetUser(userName, message){
+    console.log(userName);
+    console.log(message);
+    return "Hi, I am " + userName + ", " + message; // 값을 반환하는 명령어
+}
+
+// 순서대로 출력된다. console.log 했을때.
+greetUser("Max", "Hello!"); // Max \n  Hello! 로 출력
+greetUser("Manuel", "Hello, what's up?"); // Manuel \n  Hello, what's up? 로 출력
+greetUser(); // 이렇게 매개변수 값을 안 주면 undefined가 나온다.
+
+function creatGreetUser(userName, message = "Hello!"){
+    return "Hi, I am " + userName + ", " + message; // 값을 반환하는 명령어
+}
+
+const greeting1 = creatGreetUser("Max")
+console.log(greeting1); 
+console.log(creatGreetUser("Manuel", "Hello, what's up?"));
+// 기본적으로 function에서 값을 읽은 다음 명령어에 대한 값을 읽는 순서로 진행 된다.
+
+*/
+
