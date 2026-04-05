@@ -40,3 +40,19 @@ console.log(userMessage2);
 console.log(1569);
 
 */
+
+/* 연산자
+
+console.log("10 + 5"); // 결과값 출력. 그냥 "10 + 5"를 출력하려면 끝에 "" 붙이기
+console.log("hello" + "world"); // 문자열에 +를 사용해 이어 붙이기 가능하다.
+
+// 비교 연산. 같으면 true, 틀리면 false
+console.log(10 === 10); 
+console.log(10 > 10);
+
+// if문 () 안의 조건이 일치하면 해당 명령어 실행
+if(10 === 10) {
+    console.log("works");
+}
+
+*/
