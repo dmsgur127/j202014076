@@ -1,3 +1,5 @@
+/* import와 export
+
 // import를 사용할 때 변수명의 대소문자 구분 잘 해야하며,
 // 파일 위치를 적을 때 자바스크립트는 확장자까지 작성해야 하며, 리액트는 확장자를 적을 피요가 없다
 import  apikey from "./util.js";
@@ -16,3 +18,25 @@ import {abc, def as content } from "./util.js";
 console.log(apikey); // 브라우저 콘솔 창에 로그를 남기는 명령어
 console.log(abc);
 console.log(content);
+
+*/
+
+/* --------------------------------------------------- */
+
+/* 변수와 값
+
+// 하이픈, 공백 없어야함. 처음 소문자 그다음 단어부터 앞글자에 대문자 넣는다.
+// !, ? 안 된다. 맨 앞에 숫자를 넣을 수 없다. 사용 가능한 특수 문자 : $, _
+let userMessage = 'hello world!';
+const userMessage2 = "hello world!!!";
+
+userMessage = 'hello world!!!!!';
+// userMessage2 = "hie hello world" // 상수(const)는 한 번 지정 후 변경 불가
+
+// 문자열 ", ' 모두 사용가능. 안하면 Uncaught SyntaxError 발생 
+//console.log('hello world!');  
+console.log(userMessage);
+console.log(userMessage2);
+console.log(1569);
+
+*/
